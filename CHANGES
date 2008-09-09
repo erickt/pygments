@@ -5,8 +5,17 @@ Version 0.12
 ------------
 (codename not selected, release XXX XX, 2008)
 
+- Add Python3TracebackLexer and ``python3`` option to 
+  PythonConsoleLexer.
+
 - Fix PythonTracebackLexer to be able to recognize SyntaxError and
   KeyboardInterrupt (#360).
+
+- Provide one formatter class per image format, so that surprises like
+    pygmentize -f gif -o foo.gif foo.py
+  creating a PNG file are avoided.
+
+- Actually use the `font_size` option of the image formatter.
 
 
 Version 0.11.1
