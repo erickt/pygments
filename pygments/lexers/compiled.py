@@ -1663,6 +1663,10 @@ class ValaLexer(RegexLexer):
 
 
 class FelixLexer(RegexLexer):
+    """
+    For `Felix <http://www.felix-lang.org>`_ source code.
+    """
+
     name = 'Felix'
     aliases = ['felix', 'flx']
     filetypes = ['*.flx', '*.flxh']
